@@ -121,7 +121,7 @@ agentId='TUD99R4O6E'
 agentAliasId='CVBL5FS7HT'
 
 sessionId = str(uuid.uuid4())
-message = "what is the utc time?"
+message = "what is the utc time now?"
 
 invoke_agent_and_print(
     agentId=agentId,
