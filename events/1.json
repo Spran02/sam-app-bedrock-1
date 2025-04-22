@@ -1,0 +1,10 @@
+{
+    "agent": "TestAgent",
+    "actionGroup": "MathFunctions",
+    "function": "add_two_numbers",
+    "parameters": [
+        {"name": "number1", "value": "10"},
+        {"name": "number2", "value": "20"}
+    ],
+    "messageVersion": "1.0"
+}

@@ -1,0 +1,7 @@
+{
+    "agent": "TestAgent",
+    "actionGroup": "MathFunctions",
+    "function": "get_time",
+    "parameters": [],
+    "messageVersion": "1.0"
+}

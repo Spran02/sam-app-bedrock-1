@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies..."
+      - pip install -r hello_world/requirements.txt
+
+  build:
+    commands:
+      - echo "Building the SAM application..."
+      - sam build --use-container
+
+  post_build:
+    commands:
+      - echo "Deploying the SAM application..."
+      - sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --capabilities CAPABILITY_IAM --stack-name sam-app-bedrock-test1 --resolve-s3
+
+      - echo "Deploying the Bedrock Agent..."
+      - python deploy_bedrock_agent.py
