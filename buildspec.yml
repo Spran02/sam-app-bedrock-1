@@ -17,4 +17,4 @@ phases:
       - sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --capabilities CAPABILITY_IAM --stack-name sam-app-bedrock-test1 --resolve-s3
 
       - echo "Deploying the Bedrock Agent..."
-      - python deploy_bedrock_agent.py
+      - python bedrock1.py
